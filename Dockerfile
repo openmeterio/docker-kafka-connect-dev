@@ -1,6 +1,6 @@
 FROM confluentinc/cp-kafka-connect-base:7.4.1
 
-ENV CLICKHOUSE_CONNECTOR_VERSION=v0.0.19
+ENV CLICKHOUSE_CONNECTOR_VERSION=v1.0.1
 RUN wget -q -O /tmp/clickhouse-kafka-connect.zip https://github.com/ClickHouse/clickhouse-kafka-connect/releases/download/${CLICKHOUSE_CONNECTOR_VERSION}/clickhouse-kafka-connect-${CLICKHOUSE_CONNECTOR_VERSION}.zip
 
 ENV JDBC_CONNECTOR_VERSION=10.7.2
